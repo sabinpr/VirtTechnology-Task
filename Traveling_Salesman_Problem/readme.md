@@ -33,6 +33,6 @@ python tsp_solver.py
 The script will print the shortest possible route and its total distance to the console.
 
 ```
-The shortest possible route is: A -> C -> F -> D -> E -> B -> A
-The total distance is: 120 km
+The shortest possible route is: A -> B -> F -> D -> E -> C -> A
+The total distance is: 119 km
 ```
