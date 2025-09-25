@@ -25,7 +25,7 @@ This approach is effective for a small number of cities. However, the time compl
 2. Run the script from your terminal:
 
 ```
-python tsp_solver.py
+python TSP.py
 ```
 
 ## Output
