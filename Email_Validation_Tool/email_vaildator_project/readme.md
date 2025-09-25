@@ -63,6 +63,28 @@ This project provides an **Email Validation API** built with **Django REST Frame
     }
   },
   {
+    "email": "hello@world.com",
+    "format_valid": true,
+    "mx_exists": true,
+    "smtp_valid": "unverifiable",
+    "dns_records": {
+      "spf": "v=spf1 include:_spf.google.com ~all",
+      "dkim": "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCZWjYKNFNEK3Gjg912+8N7vFs3nEEuijo38Ieshkam7chlfOYwrybfOR0d0JGDJ3pnpc7yr7CEka1iKERTljcQwcq5bKSHxHXCSHa2CPtfpWMAZjuFV7xaF8Hv6uqR/NoaRYeV/ZLBAg7CqAkq331fQrL3ycKnQBeynnqvDYT/+wIDAQAB",
+      "dmarc": "v=DMARC1; p=none; rua=mailto:dmarc-reports@world.com"
+    }
+  },
+  {
+    "email": "sabinprajapati7@gmail.com",
+    "format_valid": true,
+    "mx_exists": true,
+    "smtp_valid": "unverifiable",
+    "dns_records": {
+      "spf": "v=spf1 redirect=_spf.google.com",
+      "dkim": "not found",
+      "dmarc": "v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com"
+    }
+  },
+  {
     "email": "invalid-email",
     "format_valid": false,
     "mx_exists": false,
